@@ -1,37 +1,37 @@
 //  !   EJEMPLO DE CLASES, METODOS HEREDADOS Y STATIC EN JAVASCRIPT
 
-class padre{
-    static ContadorUsos = 0;
+class padre{        //  !Declaracion de La clase padre
+    static ContadorUsos = 0;    //  Declaracion de atributo de Clase "ContadorUsos"
 
-    constructor(nombre, apellido){
-        this.nombre1 = nombre;
-        this.apellido1 = apellido;
-        padre.ContadorUsos++;
+    constructor(nombre, apellido){  //  ?   Declaracion de una funcion constructor con sus atributos "nombre y apellido";
+        this.nombre1 = nombre;  //  ?   Declaracion del argumento nombre1 con la asginacion del atributo nombre
+        this.apellido1 = apellido;  //  ?   Declaracion del argumento apellido1 con la asginacion del atributo apellido
+        padre.ContadorUsos++;   //  ?   Usamos el atrbuto "ContadorUsos" y sumanos en 1 segun el numero de veces que se use
 
     }
 
-    get nombre(){
-        return this.nombre
+    get nombre(){   //  !   Declaramos el metodo Get para el atributo nombre
+        return this.nombre  //  ?   retornamos el valor obtenido de Nombre
     }
 
-    set nombre(nombre){
-        this.nombre1 = nombre;
+    set nombre(nombre){  //  !   Declaramos el metodo set para pasarle un nuevo valor al atributo ya establlecido nombre
+        this.nombre1 = nombre;  //  ? cambiamos el valor al atributo nombre1 con el parametro nombre 
     }
 
-    get apellido(){
-        return this.apellido
+    get apellido(){ //  !   Declaramos el metodo Get para el atributo apellido
+        return this.apellido    //  ?   retornamos el valor obtenido de apelllido
     }
 
-    set apellido(apellido){
-        this.apellido1 = apellido;
+    set apellido(apellido){ //  !   Declaramos el metodo set para pasarle un nuevo valor al atributo ya establlecido apellido
+        this.apellido1 = apellido;  //  ? cambiamos el valor al atributo apellido1 con el parametro apellido
     }
 
-    nombreCompleto(){
-        return 'Ing. ' + this.nombre1 + ' ' + this.apellido1;
+    nombreCompleto(){   //  !   Declaramos la funcion nombre completo sin establecer atributos
+        return 'Ing. ' + this.nombre1 + ' ' + this.apellido1;   //  ?   Retornamos una linea que contiene la informacion concatenada del nombre y apellido.
     }
 
-    toString(){
-        return this.nombreCompleto();
+    toString(){     //  !   Declaramos la funcion o metodo toString 
+        return this.nombreCompleto();   //  ?   
     }
 
     static saludo(){
