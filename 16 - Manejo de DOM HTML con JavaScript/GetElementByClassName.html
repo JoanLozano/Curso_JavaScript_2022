@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>    
+</head>
+<body>
+    <h1 class="azul">Obtener elementos por su Class Name</h1>
+    <p class="azul">Parrafo 1</p>
+    <p class="azul">Parrado 2</p>
+    <script>
+
+        //declaramos una variable y asigamos el valor de todos los elementos html que tengan un ClassName = "azul" como un array
+        let Elementos = document.getElementsByClassName('azul');
+
+        //Imprimimos en consola el numero de elemtos haciendo uso de la propiedad Length
+        console.log('No. Elementos con la Clase Azul: ' + Elementos.length);
+
+        //Creamos un ciclo for, e imprimos el valor del array Elementos
+        for (i = 0; i<Elementos.length; i++){
+            console.log(`${i} - ${Elementos[i].innerHTML}`);
+        }
+
+        //Otra forma de hacerlo con FOR OF
+        for (let elemento of Elementos){
+            console.log(`${elemento.innerHTML}`);
+        }
+
+    </script>
+</body>
+</html>

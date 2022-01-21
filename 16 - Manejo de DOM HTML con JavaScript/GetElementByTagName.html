@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
+</head>
+<body>
+    <h1>Obtener elementos por su Tag Name</h1>
+    <p id="parrafo_1">Parrafo 1</p>
+    <p id="parrafo_1">Parrado 2</p>
+
+    <script>
+        //declaramos una variable y asigamos el valor de todos los elementos html que tengan un tagname = "P" como un array
+        let parrafos =  document.getElementsByTagName('h1');
+
+        //Imprimimos en consola el numero de parrafos haciendo uso de la propiedad Length
+        console.log(`N. parrafos ${parrafos.length}`);
+
+        //Creamos un ciclo for, e imprimos el valor del array parrafo
+        for (let i = 0; i < parrafos.length; i++ ){
+            console.log(parrafos[i].innerHTML);
+        }
+
+        //Otra forma de hacerlo
+        // for (let i = 0; i < parrafos.length; i++ ){
+        //     console.log(`${i} - ${parrafos[i].innerHTML}`);
+        // }
+    </script>
+</body>
+</html>
