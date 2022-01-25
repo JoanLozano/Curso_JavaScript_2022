@@ -1,6 +1,5 @@
 body{
     background-color: #CDEFF5;
-    
 }
 
 #reloj{
@@ -11,7 +10,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .contenedor{
     background-color: #6402EB;
@@ -19,7 +17,7 @@ body{
     max-width: 75%;
     text-align: center;
     border-radius: 10px;
-    position: absolute;
+    margin-top: 10%;
 }
 
 .animar{
