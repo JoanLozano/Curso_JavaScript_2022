@@ -34,7 +34,7 @@ body {
     color: #fff;
     background: url(fondo.png), #7b4397;
     background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430)
+    background: url(fondo.png), linear-gradient(to left, #6a49fd, #e180ff)
 }
 
 .presupuesto {
@@ -191,8 +191,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-.ingreso_titulo { color: #28B9B5; }
-.egreso_titulo { color: #FF5049; }
+.ingreso_titulo { color: #28B9B5; text-align: center; }
+.egreso_titulo { color: #FF5049; text-align: center; }
 
 .elemento {
     padding: 13px;
@@ -256,3 +256,17 @@ h2 {
 .elemento:hover .elemento_eliminar--btn { display: block; }
 .elemento:hover .elemento_valor { transform: translateX(-20px); }
 .elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+
+
+.foot{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+footer{
+    text-align: center;
+    font-size: large;
+}
