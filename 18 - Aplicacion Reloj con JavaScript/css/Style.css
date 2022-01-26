@@ -11,13 +11,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .contenedor{
     background-color: #6402EB;
     padding: 25px;
     max-width: 75%;
     text-align: center;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 10rem;
+
 }
 
 .animar{
